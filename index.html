@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Karen Gentil">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Enviar notificações por Email</title>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("z4yhUhLEP9OOVf1LW");
+        })();
+    </script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <section class="corpo">
+
+        <div class="container">
+        
+            <form class="contact_form" onsubmit="sendMail(); reset(); return false">
+                <input type="text" placeholder="Seu nome" id="name"> <br>
+                <input type="email" name="" placeholder="endereço de email" id="email"> <br>
+                <input type="number" name="" placeholder="numero de telefone" id="phone"> <br>
+                <textarea name="" id="message" rows="4" placeholder="Como nós podemos te ajudar"></textarea>
+                <input type="submit" value="Enviar" id="btn">
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
